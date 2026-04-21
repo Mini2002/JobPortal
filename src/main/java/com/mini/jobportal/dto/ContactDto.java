@@ -1,4 +1,7 @@
 package com.mini.jobportal.dto;
 
-public record ContactDto() {
+import java.io.Serializable;
+
+public record ContactDto(String email, String message, String name, String subject,
+                         String userType) implements Serializable {
 }
